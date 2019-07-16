@@ -19,3 +19,26 @@ this part the paper include [Adam](https://arxiv.org/pdf/1801.01615.pdf) model<b
 <br>
 part 3:<br>
 adjust models to make them linked together<br>
+
+usage
+---
+you will need to install dependencies:
+```shell
+pip install requirements.txt//shell
+```
+I sugest you using virtual-envior to prevent something bad happend
+
+you can use any proper dataset to train this model,just edit the dataloader and change numbers of joints in datasets/PanopicConvert.py
+
+if you want to use origanal datasets,check data/dataset.md
+
+after prepared the datasets,
+you can run 
+```shell
+python trainV1.py//shell
+```
+and you wouldn't need to wait the whole train finished since it would cost more than 3 weeks. you can try the model generated every 3 epochs which would be named as multiepoch0.pkl ,replace the files name inside basicusage.py, and run basicusage.py(remember to name the test images and target json for check)
+
+further edit
+-----
+you can check the commit in files.
